@@ -11,33 +11,23 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/index.js"></script>
+  <script src="js/register_friend.js"></script>
 </head>
 <body>
   <div class="container-fluid">
     <div class="row">
-      <img src="assets/logo.png" id="imglogo" class="mx-auto d-block mt-3">
-    </div>
-    <div class="row">
-      <div class="form-group col-12 text-center mt-4">
-        <input type="text" name="username" id="username" placeholder="Nome de Usuário" class="form-control text-center">
-        <input type="password" name="password" id="password" placeholder="Senha" class="form-control text-center mt-2">
-        
-        <div class="mt-2">
-          <div class="form-check form-check-inline text-white">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="friend" checked>
-            <label class="form-check-label" for="inlineRadio1">Amigo</label>
-          </div>
-  
-          <div class="form-check form-check-inline text-white">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="requester">
-            <label class="form-check-label" for="inlineRadio2">Solicitante</label>
-          </div>
-        </div>
-
-        <input type="button" value="Entrar" class="form-control btn btn-success mt-2">
-        <a href="register.html">Não tem conta? Cadastre-se!</a><br>
-        <a href="#">Esqueci minha senha</a><br>
+      <div class="form-group col-12 text-white mt-4">
+        <label for="name">Nome Completo:</label>
+        <input type="text" name="name" id="name" class="form-control text-center">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" class="form-control text-center">
+        <label for="fone">Telefone:</label>
+        <input type="text" name="fone" id="fone" class="form-control text-center">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" name="username" id="username" class="form-control text-center">
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" class="form-control text-center">
+        <input type="submit" name="register" value="Cadastrar" class="btn btn-success form-control mt-3">
       </div>
     </div>
   </div>

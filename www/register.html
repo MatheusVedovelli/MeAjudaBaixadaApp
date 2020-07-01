@@ -10,20 +10,26 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/register.js"></script>
 </head>
 <body>
   <div class="container-fluid">
     <div class="row">
-        <div class="col-12 text-center align-self-center">
-            <h1 class="text-white">Quem precisa de ajuda?</h1><br>
+      <h1 class="col-12 text-center text-white">Cadastro</h1>
+      <div class="form-group col-12 text-center text-white">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="friend" checked>
+            <label class="form-check-label" for="inlineRadio1">Amigo</label>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12 text-center align-self-center">
-            <a href="#" class="btn btn-primary mt-2 mb-2 indexbtn">Eu mesmo</a><br>
-            <a href="#" class="btn btn-primary mt-2 mb-2 indexbtn">Um amigo</a><br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="requester">
+            <label class="form-check-label" for="inlineRadio2">Solicitante</label>
         </div>
+      </div>
+      <div class="embed-responsive embed-responsive-4by3 registerframe">
+        <iframe src="register_friend.html" frameborder="0" class="embed-responsive-item" id="frame"></iframe>
+      </div>
     </div>
   </div>
 </body>
