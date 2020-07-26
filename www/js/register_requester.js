@@ -15,6 +15,7 @@ $(function(){
         };
 
         $.post("http://192.168.100.65:8080/meajudabaixada-api/register_requester.php", info).done(function(data){
+            console.log(data);
             const Response = JSON.parse(data);
             console.log(Response);
             if(Response.message)
